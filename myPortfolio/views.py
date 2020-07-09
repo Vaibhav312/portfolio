@@ -25,7 +25,7 @@ def index(request):
                     except BadHeaderError:
                         return HttpResponse('Invalid header found.')
                     messages.success(request, 'Thanks for contacting me',extra_tags='alert')
-                    return HttpResponseRedirect('/')
+                    return HttpResponseRedirect('index')
                    
         else:
             contact = ContactUsForm()
