@@ -1,0 +1,345 @@
+   :root {
+      --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      --secondary-font: 'Herr Von Muellerhoff', cursive;
+      --main-font-color-dark: #222831;
+      --secondary-font-color: #393e46;
+      --body-font-color: #00adb5;
+      --background-color: yellowgreen;
+  }
+  
+  html,
+  body {
+      margin: 0px !important;
+      padding: 0px !important;
+      background-color: var(--main-font-color-dark);
+      scroll-behavior: smooth;
+  }
+  
+  .loader {
+      position: fixed;
+      z-index: 999999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #D1D1D1;
+  }
+  
+  .loader.hidden {
+      animation: fadeOut 2s forwards;
+  }
+  
+  div {
+      margin: 0;
+      padding: 0;
+  }
+  
+  .background_image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  ul a:hover {
+      color: #FBC02D !important;
+  }
+  
+  nav li {
+      text-align: center;
+      text-transform: uppercase;
+  }
+  
+  li>a:after,
+  a.active::after {
+      content: '';
+      display: block;
+      height: 1.5px;
+      background: #FBC02D;
+      transform: scaleX(0);
+      transition: transform .5s;
+  }
+  
+  li>a:hover:after,
+  a.active::after {
+      transform: scaleX(1);
+      transition: transform .5s;
+  }
+  
+  .active {
+      color: #FBC02D !important;
+  }
+  
+  .navbar {
+      display: flex;
+  }
+  
+  .navbar-brand h4 {
+      color: white;
+      font-family: var(--main-font);
+  }
+  
+  .navbar-nav li {
+      justify-content: space-evenly;
+      align-content: space-around;
+      padding: 10px 20px;
+      transition: color 2s !important;
+  }
+  
+  .navbar-nav li a {
+      font-size: 15px;
+      transition: color 0.5s !important;
+  }
+  
+  .navbar-nav li a:hover {
+      color: var(--background-color) !important;
+  }
+  /*************************************************HOME****************************************/
+  
+  #main_page .jumbotron {
+      background: url("/static/images/home-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 0px;
+  }
+  
+  #main_page .container {
+      text-align: center;
+      padding-top: 40px;
+      margin: 100px auto;
+  }
+  
+  #main_page .container h1 {
+      font-size: 50px;
+  }
+  
+  #main_page .container h3 {
+      padding-bottom: 40px;
+  }
+  
+  .main_button {
+      height: 60px;
+      width: 150px;
+      border: 1px solid var(--background-color);
+      border-radius: 30px;
+      color: white;
+      background-color: #222831;
+      transition: background-color 0.5s !important;
+      text-align: center !important;
+  }
+  
+  .main_button:hover {
+      background-color: var(--background-color) !important;
+  }
+  /************************ABOUT ME******************************/
+  
+  #about_me {
+      background-color: var(--main-font-color-dark);
+      margin-top: 40px;
+      color: white;
+  }
+  
+  #about_main_container {
+      padding: 20px;
+  }
+  
+  #about_main_container h1.text_shadow {
+      position: absolute;
+      left: 40px;
+      font-size: 7vw;
+      color: var(--secondary-font-color);
+      font-stretch: condensed;
+      font-weight: 900;
+  }
+  
+  #about_main_container h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 50px;
+      font-weight: 700;
+  }
+  
+  #about_main_container p {
+      padding-top: 0;
+      padding-bottom: 1rem;
+      color: var(--body-font-color);
+  }
+  
+  #about_me img {
+      width: 500px;
+      height: 700px;
+      margin: 30px auto;
+  }
+  
+  .borderless td,
+  .borderless th {
+      border: none;
+  }
+  
+  .table td {
+      color: var(--body-font-color)!important;
+  }
+  
+  .table .row {
+      color: white !important;
+  }
+  /*******************RESUME*****************************/
+  
+  #resume {
+      background-color: var(--main-font-color-dark);
+  }
+  
+  #resume .container {
+      color: white;
+      padding: 40px;
+  }
+  
+  .card-title {
+      color: var(--background-color);
+  }
+  
+  .heading-section h1.big {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      font-size: 7vw;
+      color: var(--secondary-font-color);
+      font-weight: 900;
+  }
+  
+  .heading-section h1.big.big-2 {
+      right: 0;
+  }
+  
+  .heading-section h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 60px;
+      font-weight: 700;
+  }
+  
+  #resume .container p {
+      color: var(--body-font-color);
+  }
+  /*****************SKILLS*********************************/
+  
+  #skills .container .row {
+      margin: 20px auto;
+  }
+  
+  #skills .container p {
+      color: var(--body-font-color);
+  }
+  
+  #skills {
+      background-color: var(--main-font-color-dark);
+      color: white;
+  }
+  
+  #last_progress_bar {
+      margin-bottom: 80px;
+  }
+  
+  .progress {
+      height: 25px;
+      border-radius: 40px;
+  }
+  
+  #skills h5 {
+      color: var(--background-color);
+  }
+  /**************************************************PROJECTS************************************/
+  
+  #projects .image_background {
+      width: 100%;
+      height: 300px;
+  }
+  
+  #project_text {
+      color: var(--body-font-color);
+  }
+  
+  #projects {
+      background-color: var(--main-font-color-dark);
+      margin-bottom: 3rem;
+      color: white;
+  }
+  
+  .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+      padding: 0px !important;
+  }
+  
+  .hovereffect .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: var(--body-font-color);
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      padding: 0px!important;
+  }
+  
+  .hovereffect:hover .overlay {
+      opacity: 1;
+  }
+  /**************************************************contact_us************************************/
+  
+  #contact_us {
+      background-color: var(--main-font-color-dark);
+      color: white;
+  }
+  
+  .contact_details {
+      text-align: center;
+  }
+  
+  #contact_us p {
+      color: var(--body-font-color);
+  }
+  
+  #contact_us .icons {
+      background-color: grey;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      color: var(--background-color);
+  }
+  
+  #contact_us a:link {
+      text-decoration: none;
+  }
+  /**************************************************FOOTER************************************/
+  
+  #main_footer {
+      background-color: var(--main-font-color-dark);
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: 100px
+  }
+  
+  #main_footer h5 {
+      text-align: center;
+      margin: 3rem auto;
+  }
+  /*Animations*/
+  
+  @keyframes fadeOut {
+      100% {
+          opacity: 0;
+          visibility: hidden;
+      }
+  }
+  /*Animations*/
