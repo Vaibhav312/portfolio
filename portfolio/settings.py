@@ -1,6 +1,6 @@
 
 import os
-from decouple import config
+from decouple import config, Csv
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -17,7 +17,7 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['myportfolio21.herokuapp.com','127.0.0.1']
 
