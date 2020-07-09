@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-18">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href=" {% static 'css/styling.css' %}">
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="200">
+
+<!--*****************************Pre Loader*************************************************-->
+  <div class="loader d-flex justify-content-center align-items-center">
+    
+    <img src="{% static 'images/loader.gif' %}"/>
+    
+    
+
+  </div>
+<!--*****************************NAVBAR STARTS*************************************************-->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark " style="background-color: #222831;">
+            <a class="navbar-brand px-2">
+                <h4>MY Portfolio</h4>
+            </a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-item nav-link active" href="#main_page">HOME</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="#about_me">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="#resume">RESUME</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="#skills">SKILLS</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="#projects">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="#contact_us">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </section>
+
+    <!--*****************************JUMBOTRON STARTS*************************************************-->
+    <section id="main_page">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h5>HELLO !<h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                  <h1>I'm <span style="color:yellowgreen;"> Vaibhav</span></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>I am a Software Developer, creating modern and responsive designs for Web and Mobile. Let us work together.</h3>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                <a href="#contact_us"><button class="main_button">Hire Me</button></a>
+            </div>
+            <div class="col-md-6">
+              <a href="#projects"><button class="main_button">My Works</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    
+    
+    
+    <!--************************************************ABOUT ME**************************************************-->
+     
+    <section id="about_me">
+      <div class="container">
+        <div class="row d-flex ">
+          <div class="col-md-6" id="about_main_container">
+
+            <h1 class="text_shadow">
+              ABOUT
+            </h1>
+            <h1>ABOUT ME</h1>
+            <div class="container" style="margin-top:50px">
+              <p>
+                Being a passionate learner, I constantly explore in different fields to strengthen my IT skills. Although my professional path has taken
+                many twists and turns as I had to left my job as FQA Tester due to family issues. But I've never stopped engaging my passion of exploring to software. So I have
+                built Web Apps,softwares and even games.<br> If you are interested, you can view some of my favorite projects in my portfolio down below.
+              </p>
+
+                <table class="table borderless">
+                  <tr>
+                    <td class="row">
+                      <h5>Name:</h5>
+                    </td>
+                    <td>
+                      Vaibhav
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <h5>Date of birth:</h5>
+                    </td>
+                    <td>
+                      July 01, 1996
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <h5>Address:</h5>
+                    </td>
+                    <td>
+                      Baghel Colony,Shikohabad(Firozabad)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <h5>Zip code:</h5>
+                    </td>
+                    <td>
+                      283135
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <h5>Email:</h5>
+                    </td>
+                    <td>
+                      vaibhavbaghel3196@gmail.com
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <h5>Phone:</h5>
+                    </td>
+                    <td>
+                      +91-7906847339
+                    </td>
+                  </tr>
+                </table>
+
+
+            <a href="{% static 'files/cv.pdf' %}" target="_blank" download><button type="button" class="main_button">Download CV</button></a>
+            </div>
+            </div>
+            <div class="col-md-6" style="background:url('{% static 'images/about.jpg' %}')center no-repeat ">
+            </div>
+        </div>
+
+      </div>
+
+      </section>
+
+  <!--*********************************RESUME***************************-->
+
+  <section id="resume">
+      <div class="container" >
+        <div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 text-center heading-section">
+            <h1 class="big big-2">
+              RESUME
+            </h1>
+            <h2 class="mb-5">RESUME</h2>
+            <p>Strong knowledge Java,Python,Full Stack Web Developer of Design and integration problem-solving skills which can be utilized to the fullest leading to gain for the company and myself.</p>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-md-6 d-flex ">
+            <div class="card mb-4 bg-dark">
+              <div class="card-body">
+                <h3 class="card-title">FQA Tester</h3>
+                <h5>Babel Media Pvt. Ltd. Gurgaon ( 2018-2019 )</h5>
+                <p class="card-text">Tested new games, applications for bugs pre-production as a final testing phase. Used creative methods to identify bugs, wrote reports and communicated with the development team. </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="card mb-4  bg-dark">
+            <div class="card-body">
+              <h3 class="card-title">B.Tech ( 2014-18 )</h3>
+              <h5>Lovely professional University ( Punjab )</h5>
+              <p class="card-text">Completed my B.Tech in Computer Science. I have also organized and participated in various Co-curricular Activities like Coding Events,LAN gaming events .</p>
+            </div>
+         </div>
+       </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-6 d-flex ">
+          <div class="card mb-4 bg-dark">
+            <div class="card-body">
+              <h3 class="card-title">XII. (2013-14)</h3>
+              <h5>Young Scholars Academy ( Shikohabad )</h5>
+              <p>Extra co-curricular :</p>
+              <p class="card-text">Arranged Interhouse Badminton championship ,Young Scholars' Academy
+    </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6 d-flex ">
+         <div class="card mb-4 bg-dark">
+            <div class="card-body">
+              <h3 class="card-title">X ( 2011-12 )</h3>
+              <h5>Young Scholars Academy ( Shikohabad )</h5>
+              <p>Extra co-curricular :</p>
+              <p class="card-text">Member of National Cadet Corps for 2 Years in Young Scholars' Academy </p>
+            </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="row justify-content-center py-5 mt-5">
+       <div class="col-md-12 text-center heading-section">
+        <a href="{% static 'files/cv.pdf' %}" target="_blank" download><button type="button" class="main_button">Download CV</button></a>
+         </div>
+     </div>
+
+    </div>
+    </section>
+
+<!--***********************************************SKILLS*******************************************************************************-->
+
+  <section id="skills">
+    <div class="container">
+        <div class="row justify-content-center py-5 ">
+          <div class="col-md-12 text-center heading-section">
+            <h1 class="big big-2">
+              SKILLS
+            </h1>
+            <h2 class="mb-5">SKILLS</h2>
+            <p>I've worked with a wide variety of programming languages. For web applications I use PHP and Javascript. Whenever I need the most performance possible I obviously go with Java and finally when I am building prototypes or working on my hobby projects I fall back on Python ( Django )</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column ">
+          <div class="container mb-2">
+            <h5>
+              Java
+            </h5>
+          </div>
+          <div class="progress mb-4" >
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              HTML5
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              jQuery
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              CSS3
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              Bootstrap 4
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              php
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              Python
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              Django
+            </h5>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              MySQL
+            </h5>
+          </div>
+          <div class="progress mb-5">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+          <div class="container mb-2">
+            <h5>
+              Github
+            </h5>
+          </div>
+          <div class="progress" id="last_progress_bar">
+            <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!--***********************************************PROJECTS*******************************************************************************-->
+
+  <section id="projects">
+    <div class="container">
+      <div class="row justify-content-center py-3">
+        <div class="col-md-12 text-center heading-section">
+          <h1 class="big big-2">
+          Projects
+          </h1>
+          <h2 class="mb-5">My Projects</h2>
+          <p style="position:relative;z-index:1" id="project_text">I like building awesome software. I've built websites, software and even games! If you are interested, you can view some of my favorite projects down below.</p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-around align-items-center " >
+        <div class="col-md-4 image_background hovereffect d-flex flex-column justify-content-around align-items-center background_image" style="background-image:url('{% static 'images/project-1.png' %}')">
+
+                <div class="overlay">
+                  <h3 class="py-4">Weather Web App</h3>
+                  <p> ( Technologies : HTML5,CSS3,jQuery,Bootstrap4,php,<br>OpenWeather API )</p>
+                  <a href="https://github.com/Vaibhav312/weather" target="_blank"><button type="button" class="main_button">Github Link</button></a>
+                  <a href="https://weather-app021.herokuapp.com/" target="_blank"><button type="button" class="main_button">Go to Website</button></a>
+
+            </div>
+        </div>
+        <div class="col-md-7 my-3 image_background hovereffect d-flex flex-column justify-content-around align-items-center background_image" style="background-image:url('{% static 'images/project-2.png' %}')" >
+
+                <div class="overlay">
+                  <h3 class="py-5">Notes Web App</h3>
+                  <p> ( Technologies : HTML5,CSS3,jQuery,Bootstrap4,Django )</p>
+                  <a href="https://github.com/Vaibhav312/myNotesApp" target="_blank"><button type="button" class="main_button">Github Link</button></a>
+                  <a href="http://vaibhav321.pythonanywhere.com/" target="_blank"><button type="button" class="main_button">Go to Website</button></a>
+
+            </div>
+        </div>
+      </div>
+
+    <div class="row d-flex justify-content-around align-items-center ">
+      <div class="col-md-7 my-3 image_background hovereffect d-flex justify-content-around align-items-center background_image " style="background-image: url('{% static 'images/project-3.png' %}')";>
+
+                <div class="overlay">
+                  <h3 class="py-5">Restaurant One Page Template</h3>
+                  <p> ( Technologies : HTML5,CSS3,jQuery )</p>
+                  <a href="https://github.com/Vaibhav312/Restaurant" target="_blank"><button type="button" class="main_button">Github Link</button></a>
+                  <a href="https://vaibhav312.github.io/Restaurant/" target="_blank"><button type="button" class="main_button">Go to Website</button></a>
+
+            </div>
+      </div>
+      <div class="col-md-4 my-3 image_background hovereffect d-flex flex-column justify-content-around align-items-center background_image" style="background-image:url('{% static 'images/project-4.png' %}')" >
+
+                <div class="overlay">
+                  <h3 class="py-5">Tic-Tact-Toe Game</h3>
+                  <p>  (Technologies : Python )</p>
+                  <a href="https://github.com/Vaibhav312/Tic-Tact-Toe" target="_blank"><button type="button" class="main_button">Github Link</button></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-around align-items-center ">
+      <div class="col-md-12 my-3 image_background hovereffect d-flex flex-column justify-content-around align-items-center background_image" style="background-image: url('{% static 'images/project-5.png' %}');">
+
+                <div class="overlay">
+                  <h3 class="py-5">Portfolio</h3>
+                  <p> (Technologies : HTML5,CSS3,Bootstrap4,Django )</p>
+                  <a target="_blank"><button type="button" class="main_button">Github Link</button</a>
+                  <a href="#" target="_blank"><button type="button" class="main_button">Github Link</button></a>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+  <!--***********************************************CONTACT*******************************************************************************-->
+
+  <section id="contact_us">
+    <div class="container">
+      <div class="row justify-content-center py-3 ">
+        <div class="col-md-12 text-center heading-section my-5">
+          <h1 class="big big-2">
+          CONTACT
+          </h1>
+          <h2 class="mb-5">CONTACT ME</h2>
+          <p>Need anything built, want to work together or simply want to have a chat?
+              Drop me an e-mail at vaibhavbaghel3196@gmail.com or simply fill out the form below and I will reply to you soon!</p>
+        </div>
+      </div>
+      <div id="saved_message" style="color: #FBC02D;text-align:center">
+
+                {% for message in messages %}
+                    <div style="text-align:center;font-size:20px" class="mt-1">
+                              
+                                <h1>{{ message }}</h1>
+                              
+                    </div>
+                {% endfor %}
+              </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="container d-flex justify-content-center align-items-center icons">
+              <i class="fa fa-map-signs fa-3x d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+          </div>
+          <div class="container py-3 contact_details" >
+            <h3>Current Address:</h3>
+            <p class="mb-5">
+              Sukhrali, Sec 17-C ,Gurgaon (Haryana)
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="container d-flex justify-content-center align-items-center icons">
+              <i class="fa fa-phone fa-3x d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+          </div>
+          <div class="container py-3 contact_details" >
+            <h3>Contact Number:</h3>
+            <p class="mb-5">
+              + 91-7906847339
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="container d-flex justify-content-center align-items-center icons">
+              <i class="fa fa-paper-plane fa-3x d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+          </div>
+          <div class="container py-3 contact_details" >
+            <h3>Email Address :</h3>
+            <p class="mb-5">
+              vaibhavbaghel3196@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="container d-flex justify-content-center align-items-center icons">
+              <i class="fa fa-globe fa-3x d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+          </div>
+          <div class="container py-3 contact_details" >
+            <h3>Website :</h3>
+            <p class="mb-5">
+              yoursite.com
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6 image_background background_image" style="background-image: url('{% static 'images/contact_me.jpg' %}');">
+        </div>
+
+          <div class="col-md-6">
+            <div class="container">
+              {% block content %}
+                <form method="post">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    {{ contacts|crispy }}
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" data-toggle="modal" data-target="#exampleModal" class="main_button">Send</button>
+                  </div>
+                </form>
+              {% endblock %}
+            </div>
+          </div>
+      
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        <h1 class="pt-5 text-center icon">LET'S GET IN TOUCH<h1>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-md-3 mb-5">
+          <div class="container d-flex justify-content-center align-items-center" style="background-color:grey; width:100px;height:100px;border-radius:50%;">
+              <a href="https://twitter.com/vaibhavbaghel31" target="_blank"><i class="fa fa-twitter fa-3x d-flex justify-content-center align-items-center icons" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="container d-flex justify-content-center align-items-center" style="background-color:grey; width:100px;height:100px;border-radius:50%">
+              <a href="https://www.facebook.com/vaibhav.baghel.104" target="_blank"><i class="fa fa-facebook fa-3x icons d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="container d-flex justify-content-center align-items-center" style="background-color:grey; width:100px;height:100px;border-radius:50%">
+              <a href="https://www.linkedin.com/in/vaibhav-baghel-155008114" target="_blank"><i class="fa fa-linkedin fa-3x  icons d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="container d-flex justify-content-center align-items-center" style="background-color:grey; width:100px;height:100px;border-radius:50%">
+              <a href="https://github.com/Vaibhav312/" target="_blank"><i class="fa fa-github fa-3x icons d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    </section>
+  <!--***********************************************FOOTER*******************************************************************************-->
+  <section id="main_footer">
+    <div class="container">
+      <div class="row my-5">
+        <footer class="col-md-12 text-center">
+          <h5>Copyright &copy;2020 All rights reserved. </h5>
+        </footer>
+      </div>
+    </div>
+
+    </section>
+  <script>
+    $(window).on('load', function () {
+      $(".loader").addClass("hidden");
+ }); 
+    $("input").addClass("form-control");
+    $("input").addClass("mb-3");
+    $("textarea").addClass("form-control");
+    $(".help-block").css("color", "red");
+ 
+    setTimeout(function() {
+            $('#saved_message').fadeOut('slow');
+        }, 3000);
+       
+  </script>
+  </body>
+</html>
