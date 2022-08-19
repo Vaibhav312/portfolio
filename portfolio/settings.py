@@ -30,7 +30,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+<<<<<<< HEAD
     'livesync',
+=======
+>>>>>>> 10291a68373980a779da1d8a03c9eee854178d9c
     'django.contrib.staticfiles',
     'myPortfolio',
     'crispy_forms',

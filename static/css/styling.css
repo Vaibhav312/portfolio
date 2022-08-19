@@ -146,7 +146,9 @@
   #about_main_container h1.text_shadow {
       position: absolute;
       left: 40px;
+
       font-size: 4vw;
+
       color: var(--secondary-font-color);
       font-stretch: condensed;
       font-weight: 900;
@@ -202,7 +204,9 @@
       position: absolute;
       top: 20px;
       left: 0;
+
       font-size: 5vmax;
+
       color: var(--secondary-font-color);
       font-weight: 900;
   }
